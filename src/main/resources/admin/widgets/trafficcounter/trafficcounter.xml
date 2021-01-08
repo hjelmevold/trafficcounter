@@ -1,0 +1,12 @@
+<widget>
+  <display-name>TrafficCounter</display-name>
+  <description>Number of unique user visits on a site</description>
+  <interfaces>
+    <interface>contentstudio.contextpanel</interface>
+  </interfaces>
+  <allow>
+    <!-- Content Manager Administrator -->
+    <principal>role:cms.admin</principal>
+    <!--principal>role:system.everyone</principal-->
+  </allow>
+</widget>

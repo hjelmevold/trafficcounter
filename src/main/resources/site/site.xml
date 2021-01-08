@@ -1,0 +1,8 @@
+<site>
+  <mappings>
+    <mapping filter="/site/filters/trafficcounter/trafficcounter.js" order="66">
+      <pattern>/.*</pattern>
+    </mapping>
+  </mappings>
+  <form/>
+</site>

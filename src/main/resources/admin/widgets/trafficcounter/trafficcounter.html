@@ -1,0 +1,37 @@
+<widget>
+    <style type="text/css">
+        .trafficcounter-widget {
+            margin: 0.7em 1em;
+        }
+        .trafficcounter-widget table {
+            width: 100%;
+        }
+        .trafficcounter-widget td, .trafficcounter-widget th {
+            padding: 0.3em 0.5em;
+        }
+        .trafficcounter-widget th {
+            font-weight: bold;
+        }
+        .trafficcounter-widget tr:nth-child(2n+1) td {
+            background: #eee;
+        }
+    </style>
+    <div class="trafficcounter-widget">
+        <table>
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Unique visits</th>
+                    <th>Total visits</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr data-th-each="date : ${hitsPerDate}">
+                    <td data-th-text="${date.date}"></td>
+                    <td data-th-text="${date.unique}"></td>
+                    <td data-th-text="${date.total}"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</widget>

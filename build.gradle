@@ -1,0 +1,35 @@
+plugins {
+    id 'com.enonic.xp.app' version '2.0.0'
+}
+
+app {
+    name = "${appName}"
+    displayName = "${appDisplayName}"
+    vendorName = "${vendorName}"
+    vendorUrl = "${vendorUrl}"
+    systemVersion = "${xpVersion}"
+}
+
+dependencies {
+    compile "com.enonic.xp:core-api:${xpVersion}"
+    compile "com.enonic.xp:portal-api:${xpVersion}"
+    include "com.enonic.xp:lib-content:${xpVersion}"
+    include "com.enonic.xp:lib-portal:${xpVersion}"
+    include "com.enonic.xp:lib-auth:${xpVersion}"
+    include "com.enonic.xp:lib-cluster:${xpVersion}"
+    include "com.enonic.xp:lib-node:${xpVersion}"
+    include "com.enonic.lib:lib-cron:1.1.1"
+    include "com.enonic.lib:lib-thymeleaf:2.0.0"
+    include "com.enonic.lib:lib-text-encoding:2.0.0"
+    include 'com.enonic.lib:lib-util:2.0.0'
+    include "openxp.lib:appersist:2.1.0"
+}
+
+repositories {
+    maven {
+        url 'https://dl.bintray.com/openxp/public'
+    }
+    mavenLocal()
+    jcenter()
+    xp.enonicRepo()
+}
