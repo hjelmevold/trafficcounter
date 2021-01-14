@@ -5,8 +5,7 @@
     <interface>contentstudio.contextpanel</interface>
   </interfaces>
   <allow>
-    <!-- Content Manager Administrator -->
-    <principal>role:cms.admin</principal>
+    <!-- Content Manager Expert and above -->
     <principal>role:cms.expert</principal>
     <!--principal>role:system.everyone</principal-->
   </allow>
