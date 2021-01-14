@@ -7,6 +7,7 @@
   <allow>
     <!-- Content Manager Administrator -->
     <principal>role:cms.admin</principal>
+    <principal>role:cms.expert</principal>
     <!--principal>role:system.everyone</principal-->
   </allow>
 </widget>
